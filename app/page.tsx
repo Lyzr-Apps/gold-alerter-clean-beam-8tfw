@@ -13,7 +13,7 @@ import { AgentActivityPanel } from '@/components/AgentActivityPanel'
 import { IoMdMail, IoMdSettings, IoMdTime, IoMdCheckmarkCircle, IoMdAlert } from 'react-icons/io'
 import { MdDashboard, MdTrendingUp, MdTrendingDown, MdSchedule, MdRefresh } from 'react-icons/md'
 import { FiPlay, FiPause, FiCheck, FiX, FiPlus, FiSend } from 'react-icons/fi'
-import { RiGoldFill } from 'react-icons/ri'
+import { RiCoinsFill } from 'react-icons/ri'
 
 // --------------------------------------------------------------------------
 // Constants
@@ -393,7 +393,7 @@ function DashboardTab({
         <div className="bg-white border border-[hsl(30,10%,88%)] p-6 shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <span className="text-[10px] uppercase tracking-widest text-[hsl(30,5%,50%)] font-normal">Gold Price</span>
-            <RiGoldFill className="w-5 h-5 text-[hsl(40,30%,45%)]" />
+            <RiCoinsFill className="w-5 h-5 text-[hsl(40,30%,45%)]" />
           </div>
           <div className="text-3xl font-normal tracking-wide text-[hsl(30,5%,15%)]">
             {priceData?.current_price_per_ounce ?? '--'}
@@ -491,7 +491,7 @@ function DashboardTab({
             onClick={() => setShowResultModal(true)}
             className="flex items-center gap-2 px-5 py-3 bg-white border border-[hsl(30,10%,88%)] text-[hsl(30,5%,15%)] text-xs uppercase tracking-widest hover:bg-[hsl(30,10%,95%)] transition-colors shadow-sm"
           >
-            <RiGoldFill className="w-3.5 h-3.5 text-[hsl(40,30%,45%)]" />
+            <RiCoinsFill className="w-3.5 h-3.5 text-[hsl(40,30%,45%)]" />
             View Latest Result
           </button>
         )}
@@ -1148,7 +1148,7 @@ export default function Page() {
         <header className="border-b border-[hsl(30,10%,88%)] bg-white">
           <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div className="flex items-center gap-3">
-              <RiGoldFill className="w-7 h-7 text-[hsl(40,30%,45%)]" />
+              <RiCoinsFill className="w-7 h-7 text-[hsl(40,30%,45%)]" />
               <div>
                 <h1 className="text-xl font-normal tracking-widest uppercase text-[hsl(30,5%,15%)]">Gold Price Alerts</h1>
                 <p className="text-[10px] tracking-widest uppercase text-[hsl(30,5%,50%)] mt-0.5">Automated Market Monitoring</p>
