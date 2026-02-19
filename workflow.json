@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "Scheduler Trigger",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "manager_agent",
+      "type": "Agent",
+      "label": "Gold Alert Manager",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "research_agent",
+      "type": "Agent",
+      "label": "Gold Price Research Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "email_agent",
+      "type": "Agent",
+      "label": "Email Alert Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Alert Sent",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "manager_agent"
+    },
+    {
+      "source": "manager_agent",
+      "target": "research_agent"
+    },
+    {
+      "source": "manager_agent",
+      "target": "email_agent"
+    },
+    {
+      "source": "email_agent",
+      "target": "output_node"
+    }
+  ]
+}

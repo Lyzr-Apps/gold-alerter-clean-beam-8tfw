@@ -1,0 +1,18 @@
+{
+  "agent_name": "Gold Price Research Agent",
+  "agent_id": "6997283325cb8c28e05427a8",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "current_price_per_ounce": "string",
+    "current_price_per_gram": "string",
+    "price_change_24h": "string",
+    "price_change_percentage": "string",
+    "daily_high": "string",
+    "daily_low": "string",
+    "weekly_trend": "string",
+    "data_source": "string",
+    "timestamp": "string"
+  }
+}

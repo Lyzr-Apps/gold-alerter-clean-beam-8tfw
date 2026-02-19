@@ -1,0 +1,31 @@
+{
+  "agent_name": "Gold Alert Manager",
+  "agent_id": "6997285ac4e47cc7968fd581",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "price_data": {
+      "current_price_per_ounce": "string",
+      "current_price_per_gram": "string",
+      "price_change_24h": "string",
+      "price_change_percentage": "string",
+      "daily_high": "string",
+      "daily_low": "string",
+      "weekly_trend": "string",
+      "data_source": "string",
+      "timestamp": "string"
+    },
+    "threshold_evaluation": {
+      "threshold_configured": "boolean",
+      "threshold_met": "boolean",
+      "threshold_details": "string"
+    },
+    "email_status": {
+      "email_sent": "boolean",
+      "recipient_emails": "string",
+      "status_message": "string"
+    },
+    "summary": "string"
+  }
+}

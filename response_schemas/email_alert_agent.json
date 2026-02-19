@@ -1,0 +1,15 @@
+{
+  "agent_name": "Email Alert Agent",
+  "agent_id": "69972845953ca8351f0efdf3",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "email_sent": "boolean",
+    "recipient_emails": "string",
+    "email_subject": "string",
+    "gold_price_included": "string",
+    "timestamp": "string",
+    "status_message": "string"
+  }
+}
